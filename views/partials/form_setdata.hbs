@@ -1,0 +1,30 @@
+<div>{{> menu}}</div>
+<div class="map">
+  <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2332.84857316291!2d48.3458929!3d54.2181689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d4b58babe551d%3A0x272af5566398e3bb!2z0J_RgdC40YXQuNCw0YLRgNC40YfQtdGB0LrQsNGPINCx0L7Qu9GM0L3QuNGG0LA!5e0!3m2!1sru!2sru!4v1679504316546!5m2!1sru!2sru"
+  width="800" height="450" style="border-radius: 10px;" style="position:;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+</div>
+
+<div class="inf">
+<img src="/img/inf.png" class="inf">
+</div>
+<br>
+
+<div class="registr">
+<form action="/setdata" method="post">
+  <p>Контакты для связи</p>
+  <input required type="text" name="clientname" placeholder="Имя и фамилия" class="name_reg">
+  <input required type="text" name="clientmail" placeholder="Адрес электронной почты" class="mail_reg">
+  <input type="submit" value="Добавить" class="button_reg">
+  </form>
+</div>
+
+<footer class="footer">
+  <ul class="menu">
+    <li class="menuitem"><a class="menulink" href="/">Home</a></li>
+    <li class="menuitem"><a class="menulink" href="#">About</a></li>
+    <li class="menuitem"><a class="menulink" href="#">Services</a></li>
+    <li class="menuitem"><a class="menulink" href="#">Team</a></li>
+    <li class="menuitem"><a class="menulink" href="/getdata">Contact</a></li>
+  </ul>
+  <p>2023</p>
+</footer>

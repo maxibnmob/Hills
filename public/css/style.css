@@ -1,0 +1,885 @@
+ * {
+   box-sizing: border-box;
+ }
+ .spreadsheet {
+  position: relative;
+  left: 35%;
+  display: table;
+}
+
+.sheet {
+  background-color: white;
+  display: table-row;
+}
+
+.sheet_head {
+ 
+  color: white;
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+.info {
+  display: table-cell;
+  width: 250px;;
+}
+ body {
+  
+   background-image:url(/img/background.jpg);
+   background-attachment: fixed;
+   background-size: 110%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .blur {
+   backdrop-filter: blur(2px);
+ }
+
+ .top-menu {
+   position: relative;
+
+
+ }
+
+ .menu-main {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .menu-main:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .left-item {
+   float: left;
+ }
+
+ .right-item {
+   float: right;
+ }
+
+ .navbar-logo {
+   margin: 10px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .menu-main a {
+   text-decoration: none;
+   display: block;
+   line-height: 80px;
+   padding: 0 20px;
+   font-size: 18px;
+   letter-spacing: 2px;
+   font-family: 'Arimo', sans-serif;
+   font-weight: bold;
+   color: white;
+   transition: .3s linear;
+ }
+
+ .menu-main a:hover {
+   background: rgba(0, 0, 0, .3);
+ }
+
+ .form {
+   margin: 0 auto;
+   width: 753px;
+   height: 85px;
+   left: 400px;
+   top: 25px;
+   background-color: rgba(0, 0, 0, 0.48);
+   border-radius: 30px;
+
+ }
+
+ .name,
+ .date {
+   position: relative;
+   width: 273px;
+   height: 50px;
+   left: 15px;
+   top: 15px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 15px;
+   font-size: 10px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .form button {
+   width: 150px;
+   height: 50px;
+   left: 31px;
+   top: 16px;
+   position: relative;
+   background-color: rgb(145 217 248 / 23%);
+   border-radius: 25px;
+   font-size: 15px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .form button:hover {
+   background-color: rgba(28, 72, 91, 0.23);
+ }
+
+ .form button:active {
+   background-color: rgba(52, 92, 108, 0.23);
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .ad {
+   width: 1288px;
+   height: 346px;
+   margin: 50px auto;
+   font-size: 60px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .ad p {
+  position: relative;
+top: -390px;
+left: 25px;
+   width: 50px;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .ad button {
+   width: 150px;
+   height: 50px;
+position: relative;
+top: -420px;
+left: 25px;
+   background-color: rgb(145 217 248 / 23%);
+   border-radius: 25px;
+   font-size: 15px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+
+ .ad button:hover {
+   background-color: rgba(28, 72, 91, 0.23);
+ }
+
+ .ad button:active {
+   background-color: rgba(52, 92, 108, 0.23);
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .apps {
+   width: 1214px;
+   height: 445px;
+   margin: 50px 10%;
+
+ }
+
+ .footer {
+   position: relative;
+   width: 100%;
+   background: #010101a3;
+   min-height: 100px;
+   padding: 20px 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .menu {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0;
+   flex-wrap: wrap;
+ }
+
+ .menuitem {
+   list-style: none;
+ }
+
+ .menulink {
+   font-size: 1.2rem;
+   color: #fff;
+   margin: 0 10px;
+   display: inline-block;
+   transition: 0.5s;
+   text-decoration: none;
+   opacity: 0.75;
+   font-weight: 300;
+ }
+
+ .menu__link:hover {
+   opacity: 1;
+ }
+
+ .footer p {
+   color: #fff;
+   margin: 15px 0 10px 0;
+   font-size: 1rem;
+   font-weight: 300;
+ }
+
+ /*404.html*/
+ .txt {
+   position: relative;
+   width: 1000px;
+   height: 660px;
+   left: 280px;
+   top: 40px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 100px;
+
+ }
+
+ .txt button {
+   width: 445px;
+   height: 85px;
+   left: 280px;
+   top: -255px;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 25px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .txt button:hover {
+   background-color: #00000097
+ }
+
+ .txt button:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .fail {
+   width: 205px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   left: 482px;
+   top: -381px;
+   position: relative;
+ }
+
+ /*info.html*/
+ .left-item_in {
+   float: left;
+   padding-left: 20px;
+   position: relative;
+   display: inline-block;
+ }
+
+ .left-item_in:after {
+   content: " ";
+   background: #ffffff;
+   width: 60px;
+   height: 3px;
+   bottom: 15px;
+   right: 20px;
+   position: absolute;
+ }
+
+ .PaM {
+   width: 1000px;
+   height: 750px;
+   position: relative;
+   left: 250px;
+ }
+
+
+
+ .pay_com {
+   margin: 10px;
+   width: 505px;
+   height: 350px;
+   position: relative;
+   left: 150px;
+ }
+
+ .nag_com {
+   margin: 10px;
+   width: 505px;
+   height: 350px;
+   position: relative;
+   left: 350px;
+ }
+
+ .col_com {
+   margin: 10px;
+   width: 505px;
+   height: 349px;
+   position: relative;
+   left: 500px;
+ }
+
+ .chel_com {
+   width: 1000px;
+   height: 750px;
+   position: relative;
+   left: 250px;
+ }
+
+ /*Пользователи*/
+ .Dobro {
+   position: relative;
+   width: 1000px;
+   height: 660px;
+   left: 280px;
+   top: 40px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 100px;
+
+ }
+
+ .Dobro button {
+   width: 445px;
+   height: 85px;
+   left: 280px;
+   top: -60px;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 25px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .Dobro button:hover {
+   background-color: #00000097
+ }
+
+ .Dobro button:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .BS {
+   width: 760px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   left: 180px;
+   top: -190px;
+   position: relative;
+ }
+
+ .sidit_hills {
+   left: 60px;
+   top: 10px;
+   position: relative;
+ }
+
+ /*cont.html*/
+ .right-item_cont {
+   float: right;
+   padding-left: 20px;
+   position: relative;
+   display: inline-block;
+ }
+
+ .right-item_cont:after {
+   content: " ";
+   background: #ffffff;
+   width: 100px;
+   height: 3px;
+   bottom: 15px;
+   right: 20px;
+   position: absolute;
+ }
+
+ .inf {
+   width: 1300px;
+   height: 480px;
+   margin: 10px auto;
+ }
+
+ .registr {
+   margin: 10px auto;
+   width: 300px;
+   height: 250px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 10px;
+
+ }
+
+ .mail_reg {
+   position: relative;
+   width: 250px;
+   height: 50px;
+   left: 25px;
+   top: 5px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 15px;
+   font-size: 10px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .name_reg {
+   position: relative;
+   width: 250px;
+   height: 50px;
+   left: 25px;
+   top: -20px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 15px;
+   font-size: 10px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .button_reg {
+   width: 200px;
+   height: 50px;
+   left: 50px;
+   top: 15px;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.600);
+   border-radius: 22px;
+   font-size: 15px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .registr p {
+   width: 200px;
+   height: 50px;
+   left: 50px;
+   top: 15px;
+   position: relative;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .button_reg:hover {
+   background-color: #00000097
+ }
+
+ .button_reg:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ /*forest*/
+ .info_forest {
+   color: white;
+   font-size: 18px;
+   background-color: rgba(0, 0, 0, 0.500);
+ }
+
+ .button_forest {
+   left: 500px;
+   position: relative;
+   width: 445px;
+   height: 85px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 25px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+
+ }
+
+ .button_forest:hover {
+   background-color: #00000097
+ }
+
+ .button_forest:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .gall_txt {
+   color: white;
+   font-size: 35px;
+   position: relative;
+   left: 660px;
+   width: 250px;
+ }
+
+ .img_forest {
+   width: 1250px;
+   position: relative;
+   left: 100px;
+
+
+
+ }
+
+ .forest_1 {
+   width: 400px;
+   height: 500px;
+
+ }
+
+ .forest_2 {
+   width: 400px;
+   height: 500px;
+   position: relative;
+   left: 10px;
+
+ }
+
+ .forest_3 {
+   width: 400px;
+   height: 500px;
+   position: relative;
+   left: 20px;
+ }
+
+ /*hills*/
+ .kr_txt {
+   color: white;
+   font-size: 30px;
+ }
+
+ .info_hills {
+   color: white;
+   font-size: 18px;
+   background-color: rgba(0, 0, 0, 0.500);
+ }
+
+ .button_hills {
+   width: 445px;
+   height: 85px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 25px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+   left: 500px;
+   position: relative;
+ }
+
+ .button_hills:hover {
+   background-color: #00000097
+ }
+
+ .button_hills:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .gall_txt {
+   color: white;
+   font-size: 35px;
+   position: relative;
+   left: 660px;
+   width: 250px;
+ }
+
+ .img_hills {
+   width: 1250px;
+   position: relative;
+   left: 100px;
+
+
+
+ }
+
+ .hills_1 {
+   width: 400px;
+   height: 500px;
+
+ }
+
+ .hills_2 {
+   width: 400px;
+   height: 500px;
+   position: relative;
+   left: 10px;
+
+ }
+
+ .hills_3 {
+   width: 400px;
+   height: 500px;
+   position: relative;
+   left: 20px;
+ }
+
+ /*reg*/
+ .form_registr {
+   position: relative;
+   width: 1000px;
+   height: 660px;
+   left: 280px;
+   top: 40px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 100px;
+
+ }
+
+ .name_registr,
+ .mail_registr,
+ .password_r_registr,
+ .password_registr {
+   position: relative;
+   width: 550px;
+   height: 85px;
+   left: 310px;
+   top: 20px;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 15px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .img_key_registr {
+   position: absolute;
+   left: -100px;
+ }
+
+ .form_registr_but {
+   width: 445px;
+   height: 85px;
+   left: -200px;
+   top: 130px;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.480);
+   border-radius: 50px;
+   font-size: 45px;
+   color: rgb(255, 255, 255);
+   border: none;
+ }
+
+ .form_registr_but:hover {
+   background-color: #00000097
+ }
+
+ .form_registr_but:active {
+   background-color: #000000c1;
+   box-shadow: 0 5px #222222;
+   transform: translateY(4px);
+ }
+
+ .sogl_registr {
+   width: 650px;
+   color: rgb(255, 255, 255);
+   left: 255px;
+   top: 150px;
+   position: relative;
+ }
+
+ .sogl_registr span {
+   font-size: 10px;
+   color: rgba(255, 255, 255, 0.300);
+
+ }
+ /*lk*/
+ .form_lk{
+  position: relative;
+width: 1000px;
+height: 660px;
+left: 280px;
+top: 40px;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 100px;
+  
+}
+
+.mail_lk,
+.password_lk{
+  position: relative;
+width: 550px;
+height: 85px;
+left: 310px;
+top: 20px;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 15px;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.reg_lk{
+  position: absolute;
+  left: -100px;
+}
+.form_lk button{
+  width: 445px;
+height: 85px;
+left: 325px;
+top: 210px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 50px;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.form_lk button:hover {
+  background-color: #00000097
+}
+.form_lk button:active {
+  background-color: #000000c1;
+  box-shadow: 0 5px #222222;
+  transform: translateY(4px);
+}
+.registr_lk{
+  width: 100px;
+font-size: 25px;
+  left: 460px;
+  top: 220px;
+  position: relative;
+}
+.rep_lk{
+  width: 210px;
+  font-size: 25px;
+  left: 765px;
+  top: 105px;
+  position: relative;
+  
+}
+.rep_lk span{
+  text-decoration: none;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.300);
+  
+}
+/*marh*/
+.right-item_marh {
+  float: right;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+}
+ .right-item_marh:after{ 
+  content: " ";
+  background: #ffffff;
+  width: 110px;
+  height: 3px;
+  bottom: 15px;
+  right: 20px;
+  position: absolute;
+}
+
+
+
+ .cont{
+  height: 2290px;
+}
+ .Camping{
+  position: relative;
+  left: 135px;
+  top: 0px;
+ }
+ .Hills{
+  position: relative;
+  left: 430px;
+  top: 0px;
+ }
+
+ .Step{
+  position: relative;
+  left: -30px;
+  top: 570px;
+ }
+ .water{
+  position: relative;
+  left: 140px;
+  top: 10px;
+ }
+ .Color {
+  position: relative;
+  left: -325px;
+  top: 580px;
+ }
+ .Fresh{
+  position: relative;
+  left: -30px;
+  top: 580px;
+ }
+ .Forest {
+  position: relative;
+  left: 150px;
+  top: 590px;
+ }
+ .Road{
+  position: relative;
+  left: 425px;
+  top: 590px;
+ }
+ /*of*/
+ .form_of{
+  position: relative;
+width: 1000px;
+height: 660px;
+left: 280px;
+top: 40px;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 100px;
+  
+}
+
+.name_of,
+.mail_of,
+.password_r_of,
+.password_of{
+  position: relative;
+width: 550px;
+height: 85px;
+left: 310px;
+top: 20px;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 15px;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.Pay_of{
+  position: absolute;
+  left: -45px;
+}
+.form_of button{
+  width: 445px;
+height: 85px;
+left: 330px;
+top: 185px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.480); 
+  border-radius: 50px;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.form_of button:hover {
+  background-color: #00000097
+}
+.form_of button:active {
+  background-color: #000000c1;
+  box-shadow: 0 5px #222222;
+  transform: translateY(4px);
+}
+.sogl_of{
+  width: 650px;
+  color: rgb(255, 255, 255);
+  left: 255px;
+  top: 190px;
+  position: relative;
+}
+.sogl_of span{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.300);
+  
+}

@@ -1,0 +1,13 @@
+
+<div class="spreadsheet">
+	<div class="sheet sheet_head">
+		<div class="info">Имя клиента</div>
+		<div class="info">email</div>
+	</div>
+	{{#each contactsdata}}
+	<div class="sheet">
+		<div class="info">{{this.client_name}}</div>
+		<div class="info">{{this.client_email}}</div>
+	</div>
+	{{/each}}
+</div>
